@@ -3,12 +3,13 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) throws Exception {
-        System.out.print("숫자를 입력하세요 : ");
-        Scanner scanner = new Scanner(System.in);
-        int a = scanner.nextInt();
 
-        int r1 = 0, r2 = 0, r3 = 0, r4 = 0, r5 = 0, r6 = 0;
+        int a = InputView.inputNumber();
 
+        int r1 = 0, r2 = 0, r3 = 0, r4 = 0, r5 = 0, r6 = 0; // 주사위 눈이 나온 횟수 0으로 초기화
+
+        // 입력한 횟수만큼 주사위를 던지는걸 반복한다
+        // 어떠한 주사위 눈이 나오면 그 주사위 눈이 나온 횟수를 1씩 증가시킨다
         for (int i = 0; i < a; i++) {
             double b = Math.random() * 6;
             if (b >= 0 && b < 1) {
@@ -26,6 +27,7 @@ public class Main {
             }
         }
 
+        // 몇 번 나왔는지 출력한다
         System.out.printf("1은 %d번 나왔습니다.\n", r1);
         System.out.printf("2은 %d번 나왔습니다.\n", r2);
         System.out.printf("3은 %d번 나왔습니다.\n", r3);
