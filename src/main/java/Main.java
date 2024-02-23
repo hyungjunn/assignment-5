@@ -7,7 +7,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         int a = scanner.nextInt();
 
-        int r1 = 1, r2 = 0, r3 = 0, r4 = 0, r5 = 0, r6 = 0;
+        int r1 = 0, r2 = 0, r3 = 0, r4 = 0, r5 = 0, r6 = 0;
 
         for (int i = 0; i < a; i++) {
             double b = Math.random() * 6;
